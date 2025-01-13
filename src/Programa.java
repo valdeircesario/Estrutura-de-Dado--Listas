@@ -17,20 +17,26 @@ public class Programa {
         }
         
         //lista de remoção
-
         lista.remover("cristina");
+        System.out.println("Removido: cristina");
         lista.remover("valdeir");
-        lista.remover("paulo");
-        System.out.println("removeu nome");
+        System.out.println("Removido: valdeir");
+//        lista.remover("paulo");
 
 
-        System.out.println("tamanho : "+lista.getTamanho());
-        for (int i = 0; i < lista.getTamanho(); i++) {
-            System.out.println(lista.get(i).getValor());
+
+        if (lista.getTamanho() > 0) {
+            for (int i = 0; i < lista.getTamanho(); i++) {
+                System.out.println("itens da list");
+                System.out.println(lista.get(i).getValor());
+            }
+        } else {
+            System.out.println("A lista está vazia.");
+        }
 
         }
         
         
 
-    }
+
 }
